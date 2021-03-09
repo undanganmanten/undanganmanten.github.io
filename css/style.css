@@ -1,0 +1,440 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200&display=swap');
+
+/*scroll bar*/
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 1px grey; 
+  border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: grey; 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #a8a8a8; 
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+html,body{ 
+	width:100%;
+  height:100%;
+	background:#130e0e;
+}
+
+body{
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container{
+  margin: auto;
+  width: 80%;
+  /* overflow: hidden; */
+}
+
+#particles-js{
+  width: 100%;
+  height: 100vh;
+  background-color: #130e0e;
+  background-image: url('');
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+
+.teks{
+  position: absolute;
+  color: rgb(220, 220, 220);
+  text-align: center;
+  top: 10%;
+  width: 100%;
+  /* line-height: 0.4em; */
+}
+
+.teks h1{
+  font-family: 'Josefin Sans', sans-serif;
+  /* font-weight: bold; */
+  font-size: 60px;
+  opacity: 0.8;
+  margin-bottom: 0;
+}
+
+.teks p{
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: bold;
+  font-size: 25px;
+  opacity: 0.6;
+  padding: 0px 150px;
+  line-height: 2em;
+  margin-bottom: 30px;
+}
+
+.teks p a{
+  /* font-family: 'Josefin Sans', sans-serif;
+  font-weight: bold; */
+  text-decoration: none;
+  color: #fff;
+  font-size: 20px;
+  opacity: 1;
+  display: inline-block;
+}
+
+.teks a{
+  text-decoration: none;
+  color: #ccc;
+  font-size: 20px;
+  opacity: .8;
+  display: inline-block;
+  line-height: 2em;
+}
+
+.cool-link::after{
+  content:'';
+  display:block;
+  width: 0;
+  height: 3px;
+  background: #ccc;
+  transition: width .3s;
+}
+
+.cool-link:hover::after{
+  width: 100%;
+  transition: width .3s;
+}
+
+.arrow{
+  text-align: center;
+  bottom: 3em;
+  position: absolute;
+  width: 100%;
+  opacity: 0.6;
+}
+
+@media (max-width: 900px) {
+  .teks{
+    position: absolute;
+    color: #ccc;
+    text-align: center;
+    top: 10%;
+    width: 100%;
+    /* line-height: 0.4em; */
+  }
+
+  .arrow{
+    text-align: center;
+    bottom: 1em;
+    position: absolute;
+    width: 100%;
+    opacity: 0.6;
+  }
+}
+
+.arrow a img{
+  width: 45px;
+  background-color: rgba(153, 152, 150, 0.336);  
+  border-radius: 50px;
+}
+
+.arrow a img:hover{
+  background-color: rgba(153, 152, 150, 0.6);  
+  border-radius: 50px;
+}
+
+
+
+@media (max-width: 650px) {
+  .teks{
+    text-align: left;
+    top: 15%;
+    width: 100%;
+    /* line-height: 0.4em; */
+  }
+  
+  .teks h1{
+    font-family: sans-serif;
+    font-size: 40px;
+    opacity: 0.8;
+    padding-left: 20px;
+  }
+  
+  .teks p{
+    font-size: 16px;
+    opacity: 0.6;
+    padding:20px 10px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  } 
+
+  .teks p a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    opacity: 1;
+    display: inline-block;
+  }
+
+
+  .teks a{
+    padding: 10px 10px;
+    font-size: 16px;
+  }
+
+}
+
+@media (max-width: 411px) {
+  .teks{
+    text-align: left;
+    top: 10%;
+    width: 100%;
+    /* line-height: 0.4em; */
+  }
+  
+  .teks h1{
+    font-family: sans-serif;
+    font-size: 35px;
+    opacity: 0.8;
+    padding-left: 20px;
+  }
+  
+  .teks p{
+    font-size: 14px;
+    opacity: 0.6;
+    padding:20px 20px;
+    
+  } 
+
+  .teks a{
+    padding: 15px 15px;
+    font-size: 16px;
+  }
+
+}
+
+section #portfolio{
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.title{
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: bold;
+  color: #ccc;
+  opacity : 0.8;
+  font-size: 30px;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  margin-top: 200px;
+  margin-bottom: 30px;
+  padding: 0;
+}
+
+.portfolio-container{
+  max-width: 85%;
+  margin: auto;
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+}
+
+.row{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 0 0 10px 10px;
+}
+
+.image-overlay{
+  position: relative;
+  width: 32.4%;
+  margin-right: 10px;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-overlay:hover .image {
+  opacity: 0.1;
+}
+
+.image-overlay:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 16px;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.button{
+  display: flex;
+  justify-content: center;
+}
+
+.button a{
+  width: 100px;
+  border: solid 1px white;
+  background-color: transparent;
+  color: white;
+  font-size: 16px;
+  padding: 10px;
+  text-decoration: none;
+  margin: 10px;
+}
+
+.button a:hover{
+  background-color: white;
+  color: black;
+}
+
+@media(max-width : 768px){
+  .row{
+    flex-direction: column;
+    padding: 0;
+  }
+  
+  .image-overlay{
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+section #soc-med{
+  min-height: 50vh;
+  padding: 10rem;
+  padding-top: 15rem;
+  margin-top: 7rem;
+  margin-bottom: 7rem;
+}
+
+.social-media{
+  display: block;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-media h2{
+  font-family: 'Noto Sans HK', sans-serif;
+  font-size: 30px;
+  color: #ccc;
+  opacity: 0.6;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  padding-top: 3rem;
+}
+
+.social-media .social-icon{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-media .social-icon a img{
+  width: 40px;
+  height: 40px;
+  opacity: 0.7;
+  padding: 20px;
+}
+
+.social-media .social-icon a img:hover{
+  opacity: 1;
+}
+
+@media (max-width: 650px) {
+  .title{
+    font-family: 'Noto Sans HK', sans-serif;
+    color: #ccc;
+    opacity : 0.8;
+    font-size: 25px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    margin-top: 200px;
+    margin-bottom: 0;
+    padding: 0;
+  }
+
+
+  .social-media h2{
+    font-family: 'Noto Sans HK', sans-serif;
+    font-size: 23px;
+    color: #ccc;
+    opacity: 0.6;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    padding-top: 3rem;
+  }
+  .social-media .social-icon a img{
+    width: 25px;
+    height: 25px;
+    opacity: 0.7;
+    padding: 15px;
+  }
+}
+
+footer{
+  width: 100%;
+  min-height: 5rem;
+  margin-top: 4rem;
+}
+
+.foot{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ccc;
+  opacity: 0.8;
+  padding: 20px;
+  margin: 20px;
+}
+
+.foot a{
+  text-decoration: none;
+  color: #ccc;
+  opacity: 0.9;
+}
+
+.foot a:hover{
+  color: beige;
+}
+
