@@ -252,6 +252,16 @@ section #portfolio{
   flex-wrap: wrap;
 }
 
+.portfolio-container1{
+  max-width: 85%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: white;
+}
+
 .row{
   display: flex;
   flex-wrap: wrap;
