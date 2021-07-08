@@ -1,277 +1,787 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="utf-8">
-	<title>Undangan Manten</title>
-	<meta name="google-site-verification" content="2reCTdBFn90_ygIi0iPD_16YMpLzlhNpBFzuqaoDxtM" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-	<link rel="shortcut icon" href="./image/favicon.ico" type="image/x-icon">
-	<!-- js -->
-	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
-	<!-- css -->
-	<link rel="stylesheet" media="screen" href="css/style.css">
-	<!-- google font  -->
-	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+HK:wght@500&display=swap" rel="stylesheet">
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-</head>
-<body>
-	<!-- top-page -->
-	<section id="top-page">
-		<div id="particles-js">
-			<div class="teks">
-				<h1>Hi, We're Undangan Manten 👋</h1>
-				<p>We try to help happy couple to realize what kind of Invitation they want. Powered by Adobe Illustrator, Figma and VS Code.</p>
-				<p> Got any questions? <a href="https://wa.me/+6285785941534" class="cool-link" target="_blank">Contact Us</a></p>
-				<!-- <a href="https://drive.google.com/file/d/1n3yieBqLHC314K6qb2DX0vcx7pr0Sa71/view?usp=sharing" class="cool-link" target="_blank"><b>Get My Resume</b></a> -->
-<!-- 				<a href="resume/auf-resume.pdf" class="cool-link" target="_blank"><b>Get My Resume</b></a> -->
+        <!--==================== UNICONS ====================-->
+        <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+        <!--==================== SWIPER CSS ====================-->
+        <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+        
+        <!--==================== CSS ====================-->
+        <link rel="stylesheet" href="assets/css/styles.css">
 
-			</div>
-			<div class="arrow">
-				<a href="#portfolio" title="Portfolio"><img src="image/arrow-bottom1.png" alt="image arrow bottom link"></a>
-			</div>
-		</div>
-	</section>
-	<!-- portfolio -->
-	<section id="portfolio">
+        <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
 
-		<div class="title">
-			<h1>Our Recent Work</h1>
-		</div>
+        <title>Undangan Manten</title>
+    </head>
+    <body>
+        <!--==================== HEADER ====================-->
+        <header class="header" id="header">
+            <nav class="nav container">
+                <a href="#" class="nav__logo">
+                    <img src="assets/img/logo.png" alt="">
+                    <!-- Undangan Manten -->
+                </a>
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list grid">
+                        <li class="nav__item"><a href="#home" class="nav__link active-link"><i class="uil uil-estate nav__icon"></i> Home</a></li>
+                        <li class="nav__item"><a href="#about" class="nav__link"><i class="uil uil-user nav__icon"></i> About</a></li>
+                        <!-- <li class="nav__item"><a href="#skills" class="nav__link"><i class="uil uil-file-alt nav__icon"></i> Skills</a></li> -->
+                        <li class="nav__item"><a href="#services" class="nav__link"><i class="uil uil-briefcase-alt nav__icon"></i> Services</a></li>
+                        <li class="nav__item"><a href="#portfolio" class="nav__link"><i class="uil uil-scenery nav__icon"></i> Portfolio</a></li>
+                        <li class="nav__item"><a href="#contact" class="nav__link"><i class="uil uil-message nav__icon"></i> Contact Me</a></li>
+                    </ul>
+                    <i class="uil uil-times nav__close" id="nav-close"></i>
+                </div>
+                <div class="nav__btns">
+                    <!-- Theme -->
+                    <i class="uil uil-moon change-theme" id="theme-button"></i>
+                    <div class="nav__toggle" id="nav-toggle">
+                        <i class="uil uil-apps"></i>
+                    </div>
+                </div>
+            </nav>
+        </header>
 
-		<div class="portfolio-container">	
-			<div class="row">
-				<!--<div class="image-overlay">
-					<img src="image/portfolio/fita.webp" alt="fita-khoir" class="image" style="width:100%">
-					<div class="middle">
-					  <div class="text">
-						<p>Tema template. Wedding Invitation of Fita and Khoir.</p>
-						<div class="button">
-								<a href="http://undanganmanten.my.id/fita-khoir" target="_blank">Website</a>
-							 </div> 
-					  </div>
-					</div>
-				</div> -->
+        <!--==================== MAIN ====================-->
+        <main class="main">
+            <!--==================== HOME ====================-->
+            <section class="home section" id="home">
+                <div class="home__container container grid">
+                    <div class="home__content grid">
+                        <div class="home__social">
+                            <a href="https://instagram.com/undanganmanten.my.id" class="home__social-icon" target="_blank"><i class="uil uil-instagram"></i></a>
+                            <a href="https://instagram.com/undanganmanten.my.id" class="home__social-icon" target="_blank"><i class="uil uil-facebook-f"></i></a>
+                            <a href="https://instagram.com/undanganmanten.my.id" class="home__social-icon" target="_blank"><i class="uil uil-twitter-alt"></i></a>
+                        </div>
+                        <div class="home__img">
+                            <!-- <svg class="home__blob" viewBox="0 0 200 187" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <mask id="mask0" mask-type="alpha">
+                                    <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547 
+                                    130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 129.362C2.45775 
+                                    97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 -0.149132 97.9666 
+                                    0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"/>
+                                </mask>
+                                <g mask="url(#mask0)">
+                                    <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 
+                                    165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 
+                                    129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 
+                                    -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"/>
+                                    <image class="home__blob-img" x="17" y="17" xlink:href="assets/img/perfil1.png"/>
+                                </g>
+                            </svg> -->
+                            <img src="assets/img/perfil.svg" alt="">
+                        </div>
+                        <div class="home__data">
+                            <h1 class="home__title">Custom</h1>
+                            <h1 class="home__title">Web Invitation</h1>
+                            <!-- <h3 class="home__subtitle">Serve You Anytime</h3> -->
+                            <p class="home__description">We try to help happy couple to realize what kind of Invitation they want.</p>
+                            <a href="https://api.whatsapp.com/send?phone=6285785941534&text=Haloo...%20Saya%20mau%20nanya%20tentang%20UndanganManten%20nih" target="_blank" class="button button--flex">Contact Us <i class="uil uil-message button__icon"></i></a>
+                        </div>
+                    </div>
+                    <div class="home__scroll">
+                        <a href="#about" class="home__scroll-button button--flex">
+                            <i class="uil uil-mouse-alt home__scroll-mouse"></i>
+                            <span class="home__scroll-name">Scroll down</span>
+                            <i class="uil uil-arrow-down home__scroll-arrow"></i>
+                        </a>
+                    </div>
+                </div>
+            </section>
 
-				<div class="image-overlay">
-					<img src="image/portfolio/ghifari.webp" alt="mita-rizki" class="image" style="width:100%">
-					<div class="middle">
-					  <div class="text">
-						  <p>Tema template. Wedding Invitation of Qonita and Ghifari</p>
-							 <div class="button">
-								<a href="http://undanganmanten.my.id/qonita-ghifari" target="_blank">Website</a>
-							 </div> 
-					  </div>
-					</div>
-				</div>
+            <!--==================== ABOUT ====================-->
+            <section class="about section" id="about">
+                <h2 class="section__title">About Us</h2>
+                <span class="section__subtitle">My Introduction</span>
+                
+                <div class="about__container container grid">
+                    <img src="assets/img/logi.png" alt="" class="about__img">
+                    <div class="about__data">
+                        <p class="about__description">UndanganManten adalah penyedia layanan pembuatan undangan digital dikemas dalam bentuk website menarik yang bisa dibagikan kapanpun dan dimanapun. UndanganManten adalah pilihan tepat untuk membuat pernikahanmu menjadi lebih berkesan.</p>
+                        <div class="about__info">
+                            <div>
+                                <span class="about__info-title">01+</span>
+                                <span class="about__info-name">Years <br> experience</span>
+                            </div>
+                            <div>
+                                <span class="about__info-title">10+</span>
+                                <span class="about__info-name">Completed <br> Invitation</span>
+                            </div>
+                            <div>
+                                <span class="about__info-title">500+</span>
+                                <span class="about__info-name">Guest </span>
+                            </div>
+                        </div>
+                        <!-- <div class="about__buttons">
+                            <a download="" href="assets/pdf/Alexa-Cv.pdf" class="button button--flex">
+                                Download Resume <i class="uil uil-download-alt button__icon"></i>
+                            </a>
+                        </div> -->
+                    </div>
+                </div>
+            </section>
 
-				<div class="image-overlay">
-					<img src="image/portfolio/himaya.webp" alt="himaya-ilyas" class="image" style="width:100%">
-					<div class="middle">
-					  <div class="text">
-						<p>Tema template. Wedding Invitation of Himaya and Ilyas</p>
-							<div class="button">
-								<a href="http://undanganmanten.my.id/himaya-ilyas" target="_blank">Website</a>
-							 </div> 
-					  </div>
-					</div>
-				</div>
-				
-				<div class="image-overlay">
-					<img src="image/portfolio/mitaa.webp" alt="qonita-ghifari" class="image" style="width:100%">
-					<div class="middle">
-					  <div class="text">
-						<p>Tema template. Wedding Invitation of Mita and Rizki</p>
-						<div class="button">
-								<a href="http://undanganmanten.my.id/mita-rizki" target="_blank">Website</a>
-							 </div> 
-					  </div>
-					</div>
-				</div>	
-			</div>
+            <!--==================== SKILLS ====================-->
+            <!-- <section class="skills section" id="skills">
+                <h2 class="section__title">Skills</h2>
+                <span class="section__subtitle">My Technical level</span>
 
-			<div class="row">
-				<!--<div class="image-overlay">
-					<img src="image/portfolio/mitaa.webp" alt="qonita-ghifari" class="image" style="width:100%">
-					<div class="middle">
-					  <div class="text">
-						<p>Tema template. Wedding Invitation of Mita and Rizki</p>
-						<div class="button">
-								<a href="http://undanganmanten.my.id/mita-rizki" target="_blank">Website</a>
-							 </div> 
-					  </div>
-					</div>
-				</div>	-->
-		
-				<div class="image-overlay">
-					<img src="image/portfolio/simpel.webp" alt="mita-rizki" class="image" style="width:100%">
-					<div class="middle">
-					  <div class="text">
-						  <p>Contoh simple/Tema biasa. Bisa custom tema warna dan ornamen sesuai permintaan pasangan</p>
-							 <div class="button">
-								<a href="http://undanganmanten.my.id/contoh-simple" target="_blank">Website</a>
-							 </div> 
-					  </div>
-					</div>
-				</div>
-			</div>
+                <div class="skills__container container grid">
+                    <div>
 
-			<!-- <div class="row">
-				<div class="image-overlay">
-					<img src="image/portfolio/bkkbn1.webp" alt="auf" class="image" style="width:100%">
-					<div class="middle">
-					  <div class="text">
-						  <p>Rebranding BKKBN. Lomba rebranding logo BKKBN. Dibuat menggunakan Corel Draw dan Photoshop.</p>
-							 <div class="button">
-								<a href="https://drive.google.com/file/d/1aQptfyST5L_4ta-hnOZiyMXxmAZ5Xtc5/view?usp=sharing" target="_blank">Detail</a>
-							 </div> 
-					  </div>
-					</div>
-				</div>
-	
-				<div class="image-overlay">
-					<img src="image/portfolio/bkkbn2.webp" alt="auf" class="image" style="width:100%">
-					<div class="middle">
-					  <div class="text">
-						  <p>Rebranding BKKBN. Lomba rebranding logo BKKBN. Dibuat menggunakan Corel Draw dan Photoshop.</p>
-							 <div class="button">
-								<a href="https://drive.google.com/file/d/1U-nLuqq94DWH46vBgLyUimRBNwcx4v-f/view?usp=sharing" target="_blank">Detail</a>
-							 </div> 
-					  </div>
-					</div>
-				</div>
-	
-				<div class="image-overlay">
-					<img src="image/portfolio/bkkbn3.webp" alt="auf" class="image" style="width:100%">
-					<div class="middle">
-					  <div class="text">
-						  <p>Rebranding BKKBN. Lomba rebranding logo BKKBN. Dibuat menggunakan Corel Draw dan Photoshop.</p>
-							 <div class="button">
-								<a href="https://drive.google.com/file/d/1kANgwyzCEkMx8ygfpSxmZ2SPAnbujcHW/view?usp=sharing" target="_blank">Detail</a>
-							 </div> 
-					  </div>
-					</div>
-				</div>	
-			
-			</div>
+                        <div class="skills__content skills__open">
+                            <div class="skills__header">
+                                <i class="uil uil-brackets-curly skills__icon"></i>
+                                <div>
+                                    <h1 class="skills__title">Frontend Developer</h1>
+                                    <span class="skills__subtitle">More than 4 years</span>
+                                </div>
+                                <i class="uil uil-angle-down skills__arrow"></i>
+                            </div>
 
-			<div class="row">
-				<div class="image-overlay">
-					<img src="image/portfolio/ywp.webp" alt="auf" class="image" style="width:100%">
-					<div class="middle">
-					  <div class="text">
-						  <p>Wedding Planner Landing Page. Desain dibuat menggunakan Figma dan Photoshop. Prototype dibuat menggunakan template CSS Bootstrap.</p>
-							 <div class="button">
-								<a href="https://www.behance.net/gallery/101859595/Exploration-Landing-Page-Wedding-Organizer" target="_blank">Desain</a>
-								<a href="http://auf.my.id/YWP" target="_blank">Prototype</a>
-							 </div> 
-					  </div>
-					</div>
-				</div>
-	
-				<div class="image-overlay">
-					<img src="image/portfolio/kuliah1.webp" alt="auf" class="image" style="width:100%">
-					<div class="middle">
-					  <div class="text">
-						  <p>Tugas Kuliah Interaksi Manusia dan Komputer. UI/UX mobile apps tentang informasi Covid-19 di Jatim. Desain dibuat menggunakan InVision Studio</p>
-							 <div class="button">
-								<a href="https://www.youtube.com/watch?v=ylDoFeAQZqA" target="_blank">Presentation</a>
-							 </div> 
-					  </div>
-					</div>
-				</div>
-	
-				<div class="image-overlay">
-					<img src="image/portfolio/wedinv1.webp" alt="auf" class="image" style="width:100%">
-					<div class="middle">
-					  <div class="text">
-						  <p>Desain Wedding Invitation. Dibuat menggunakan Figma dan Photoshop</p>
-							 <div class="button">
-								<a href="https://www.behance.net/gallery/101859793/Exploration-Wedding-Invitation" target="_blank">Desain</a>
-							 </div> 
-					  </div>
-					</div>
-				</div>
-			
-			</div>
+                            <div class="skills__list grid">
+                                <div class="skilss__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">HTML</h3>
+                                        <span class="skills__number">90%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__html"></span>
+                                    </div>
+                                </div>
+                                
+                                <div class="skilss__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">CSS</h3>
+                                        <span class="skills__number">80%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__css"></span>
+                                    </div>
+                                </div>
+                                
+                                <div class="skilss__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">Javascript</h3>
+                                        <span class="skills__number">60%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__js"></span>
+                                    </div>
+                                </div>
+    
+                                <div class="skilss__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">React</h3>
+                                        <span class="skills__number">85%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__react"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
 
-			<div class="row">
-				<div class="image-overlay">
-					<img src="image/portfolio/kuliah2.webp" alt="auf" class="image" style="width:100%">
-					<div class="middle">
-					  <div class="text">
-						  <p>Tugas Kuliah Interaksi Manusia dan Komputer. UI/UX desktop app tentang teknis pendaftaran KADIN. Desain dibuat menggunakan Adobe XD</p>
-							 <div class="button">
-								<a href="https://www.youtube.com/watch?v=NBSgngSwZ1M" target="_blank">Presentation</a>
-							 </div> 
-					  </div>
-					</div>
-				</div>
+                       <div class="skills__content skills__close">
+                           <div class="skills__header">
+                                <i class="uil uil-server-network skills__icon"></i>
+                                <div>
+                                    <h1 class="skills__title">Backend Developer</h1>
+                                    <span class="skills__subtitle">More than 2 years</span>
+                                </div>
+                                <i class="uil uil-angle-down skills__arrow"></i>
+                           </div>
 
-				<div class="image-overlay">
-					<img src="image/portfolio/dotc.webp" alt="auf" class="image" style="width:100%">
-					<div class="middle">
-					  <div class="text">
-						  <p>Eskplorasi Landing Page tentang makanan. Desain dibuat menggunakan Figma dan Photoshop. Prototype dibuat menggunakan HTML & CSS.</p>
-							 <div class="button">
-								<a href="http://auf.my.id/dotC" target="_blank">Prototype</a>
-								<a href="https://dribbble.com/shots/12236105--Challenge-Landing-Page" target="_blank">Desain</a>
-							 </div> 
-					  </div>
-					</div>
-				</div>
+                           <div class="skills__list grid">
+                            <div class="skilss__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">PHP</h3>
+                                    <span class="skills__number">80%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__php"></span>
+                                </div>
+                            </div>
+                            
+                            <div class="skilss__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">Node Js</h3>
+                                    <span class="skills__number">70%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__node"></span>
+                                </div>
+                            </div>
+                            
+                            <div class="skilss__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">Firebase</h3>
+                                    <span class="skills__number">90%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__firebase"></span>
+                                </div>
+                            </div>
+ 
+                            <div class="skilss__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">Python</h3> 
+                                    <span class="skills__number">55%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__python"></span>
+                                </div>
+                            </div>
+                        </div>
+                       </div>
+                   </div>
+                   <div>
 
-				<div class="image-overlay">
-					<img src="image/portfolio/suhu.webp" alt="auf" class="image" style="width:100%">
-					<div class="middle">
-					  <div class="text">
-						  <p>Weather App. Dibuat menggunakan HTML, CSS dan Javascript. Data suhu diperoleh dari API yang disediakan oleh darksky</p>
-							 <div class="button">
-								<a href="http://auf.my.id/weather-app" target="_blank">Prototype</a>
-							 </div> 
-					  </div>
-					</div>
-				</div>
-	
-			</div>
+                        <div class="skills__content skills__close">
+                            <div class="skills__header">
+                                    <i class="uil uil-swatchbook skills__icon"></i>
+                                    <div>
+                                        <h1 class="skills__title">Designer</h1>
+                                        <span class="skills__subtitle">More than 5 years</span>
+                                    </div>
+                                    <i class="uil uil-angle-down skills__arrow"></i>
+                            </div>
 
-			<div class="row">
-				<div class="image-overlay">
-					<img src="image/portfolio/wedinv2.webp" alt="auf" class="image" style="width:100%">
-					<div class="middle">
-					  <div class="text">
-						  <p>Wedding Invitation. Dibuat dengan HTML, CSS, Javascript dan Firebase sebagai realtime database.</p>
-							 <div class="button">
-								<a href="http://auf.my.id/aisyah-auf" target="_blank">Prototype</a>
-							 </div> 
-					  </div>
-					</div>
-				</div>
-			</div> -->
-			
-	</section>
-	<!-- social media -->
-	<section id="soc-med">
-		<div class="social-media">
-			<h2>Let's be friend</h2>
-			<div class="social-icon">
-				<a href="#" title="t.me/" ><img src="image/socmed/telegram.svg" alt="telegram logos"></a>
-				<a href="#" title="twitter.com/"><img src="image/socmed/twitter.svg" alt="twitter logos"></a>
-				<a href="#" title="github.com/"><img src="image/socmed/github.svg" alt="github logos"></a>
-				<a href="#" title="dribbble.com/"><img src="image/socmed/dribbble.png" alt="dribbble logos"></a>
-				<a href="#" title="behance.net/"><img src="image/socmed/behance.png" alt="behance logos"></a>
-				<a href="#" title="linkedin.com/"><img src="image/socmed/linkedin.svg" alt="linkedin logos"></a>
-			</div>	
-		</div>
-	</section>
-	<!-- footer  -->
-	<footer>
-		<div class="foot">
-			<small><a href="mailto:agungtri301297@gmail.com" target="_blank">© Phunsukh Wangdu</a>. All Rights Reserved.</small>
-		</div>
-	</footer>
-	<!-- JavaScript -->
-	<!-- <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> -->
-	<script src="particles.js"></script>
-	<script src="js/app.js"></script>
-</body>
+                            <div class="skills__list grid">
+                                <div class="skilss__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">Figma</h3>
+                                        <span class="skills__number">90%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__figma"></span>
+                                    </div>
+                                </div>
+                                
+                                <div class="skilss__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">Sketch</h3>
+                                        <span class="skills__number">85%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__sketch"></span>
+                                    </div>
+                                </div>
+                                
+                                <div class="skilss__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">Photoshop</h3>
+                                        <span class="skills__number">85%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__photoshop"></span>
+                                    </div>
+                                </div>
+        
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section> -->
+
+            <!--==================== QUALIFICATION ====================-->
+            <!-- <section class="qualification section">
+                <h2 class="section__title">Qualification</h2>
+                <span class="section__subtitle">My Personal Journey</span>
+
+                <div class="qualification__container container">
+                    <div class="qualification__tabs">
+                        <div class="qualification__button button--flex qualification__active" data-target="#education">
+                            <i class="uil uil-graduation-cap qualification-icon"></i>
+                            Education
+                        </div>
+                        <div class="qualification__button button--flex" data-target="#work">
+                            <i class="uil uil-briefcase-alt qualification-icon"></i>
+                            Work
+                        </div>
+                    </div>
+                    <div class="qualification__sections">
+
+                        <div class="qualification__content qualification__active" data-content id="education">
+
+                            <div class="qualification__data">
+                                <div>
+                                    <h3 class="qualification__title">Computer Engineering</h3>
+                                    <span class="qualification__subtitle">Electronic Engineering Polytechnic Institute of Surabaya</span>
+                                    <div class="qualification__calendar">
+                                        <i class="uil uil-calendar-alt"></i>
+                                        2016-2022
+                                    </div>
+                                </div>
+                                <div>
+                                    <span class="qualification__rounder"></span>
+                                    <span class="qualification__line"></span>
+                                </div>
+                            </div>
+
+                            <div class="qualification__data">
+                                <div></div>
+                                <div>
+                                    <span class="qualification__rounder"></span>
+                                </div>
+                                <div>
+                                    <h3 class="qualification__title">Computer and Network Engineering</h3>
+                                    <span class="qualification__subtitle">Vocational School 3 of Jombang</span>
+                                    <div class="qualification__calendar">
+                                        <i class="uil uil-calendar-alt"></i>
+                                        2012-2015
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="qualification__content" data-content id="work">
+
+                            <div class="qualification__data">
+                                <div>
+                                    <h3 class="qualification__title">Internship</h3>
+                                    <span class="qualification__subtitle">Pt Pembangunan Perumahan </span>
+                                    <div class="qualification__calendar">
+                                        <i class="uil uil-calendar-alt"></i>
+                                        2016-2022
+                                    </div>
+                                </div>
+                                <div>
+                                    <span class="qualification__rounder"></span>
+                                    <span class="qualification__line"></span>
+                                </div>
+                            </div>
+
+                            <div class="qualification__data">
+                                <div></div>
+                                <div>
+                                    <span class="qualification__rounder"></span>
+                                </div>
+                                <div>
+                                    <h3 class="qualification__title">Computer and Network Engineering</h3>
+                                    <span class="qualification__subtitle">Vocational School 3 of Jombang</span>
+                                    <div class="qualification__calendar">
+                                        <i class="uil uil-calendar-alt"></i>
+                                        2012-2015
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section> -->
+
+            <!--==================== SERVICES ====================-->
+            <section class="services section" id="services">
+                <h2 class="section__title">Services</h2>
+                <span class="section__subtitle">What We Offer</span>
+                <div class="services__container container grid">
+                    <!--==================== SERVICES 1 ====================-->
+                    <div class="services__content">
+                        <div>
+                            <i class="uil uil-web-grid services__icon"></i>
+                            <h3 class="services__title">Custom Your<br> Design</h3>
+                        </div>
+                        <span class="button button--flex button--small button--link services__button">
+                            View More
+                            <i class="uil uil-arrow-right button__icon"></i>
+                        </span>
+                        <div class="services__modal">
+                            <div class="services__modal-content">
+                                <h4 class="services__modal-title">Custom Your <br> Design</h4>
+                                <i class="uil uil-times services__modal-close"></i>
+                                <ul class="services__modal-services grid">
+                                    <li class="services__modal-service">
+                                        <i class="uil uil-check-circle services__modal-icon"></i>
+                                        <p>Kamu bisa reequest design undangan kamu</p>
+                                    </li>
+                                    <li class="services__modal-service">
+                                        <i class="uil uil-check-circle services__modal-icon"></i>
+                                        <p>Request tone warna design </p>
+                                    </li>
+                                    <li class="services__modal-service">
+                                        <i class="uil uil-check-circle services__modal-icon"></i>
+                                        <p>Request tema design</p>
+                                    </li>
+                                    <li class="services__modal-service">
+                                        <i class="uil uil-check-circle services__modal-icon"></i>
+                                        <p>Suka-suka kamu deh.</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!--==================== SERVICES 2 ====================-->
+                    <div class="services__content">
+                        <div>
+                            <i class="uil uil-arrow services__icon"></i>
+                            <h3 class="services__title">Invitation <br> Features</h3>
+                        </div>
+                        <span class="button button--flex button--small button--link services__button">
+                            View More
+                            <i class="uil uil-arrow-right button__icon"></i>
+                        </span>
+                        <div class="services__modal">
+                            <div class="services__modal-content">
+                                <h4 class="services__modal-title">Invitation <br> Features</h4>
+                                <i class="uil uil-times services__modal-close"></i>
+                                <ul class="services__modal-services grid">
+                                    <li class="services__modal-service">
+                                        <i class="uil uil-check-circle services__modal-icon"></i>
+                                        <p>Nama Tamu.</p>
+                                    </li>
+                                    <li class="services__modal-service">
+                                        <i class="uil uil-check-circle services__modal-icon"></i>
+                                        <p>Musik, sesuai request kamu.</p>
+                                    </li>
+                                    <li class="services__modal-service">
+                                        <i class="uil uil-check-circle services__modal-icon"></i>
+                                        <p>Ayat suci tentang pernikahan.</p>
+                                    </li>
+                                    <li class="services__modal-service">
+                                        <i class="uil uil-check-circle services__modal-icon"></i>
+                                        <p>Manten's profile.</p>
+                                    </li>
+                                    <li class="services__modal-service">
+                                        <i class="uil uil-check-circle services__modal-icon"></i>
+                                        <p>Count down timer.</p>
+                                    </li>
+                                    <li class="services__modal-service">
+                                        <i class="uil uil-check-circle services__modal-icon"></i>
+                                        <p>Navigasi ke alamat.</p>
+                                    </li>
+                                    <li class="services__modal-service">
+                                        <i class="uil uil-check-circle services__modal-icon"></i>
+                                        <p>Informasi protokol kesehatan.</p>
+                                    </li>
+                                    <li class="services__modal-service">
+                                        <i class="uil uil-check-circle services__modal-icon"></i>
+                                        <p>Amplop Digital.</p>
+                                    </li>
+                                    <li class="services__modal-service">
+                                        <i class="uil uil-check-circle services__modal-icon"></i>
+                                        <p>Galeri Foto.</p>
+                                    </li>
+                                    <li class="services__modal-service">
+                                        <i class="uil uil-check-circle services__modal-icon"></i>
+                                        <p>Buku Tamu.</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!--==================== SERVICES 3 ====================-->
+                    <div class="services__content">
+                        <div>
+                            <i class="uil uil-pen services__icon"></i>
+                            <h3 class="services__title">Consultation</h3>
+                        </div>
+                        <span class="button button--flex button--small button--link services__button">
+                            View More
+                            <i class="uil uil-arrow-right button__icon"></i>
+                        </span>
+                        <div class="services__modal">
+                            <div class="services__modal-content">
+                                <h4 class="services__modal-title">Consultation</h4>
+                                <i class="uil uil-times services__modal-close"></i>
+                                <ul class="services__modal-services grid">
+                                    <li class="services__modal-service">
+                                        <i class="uil uil-check-circle services__modal-icon"></i>
+                                        <p>Kamu bisa konsultasi tentang undangan kamu.</p>
+                                    </li>
+                                    <li class="services__modal-service">
+                                        <i class="uil uil-check-circle services__modal-icon"></i>
+                                        <p>Konsultasi tentang penambahan fitur.</p>
+                                    </li>
+                                    <li class="services__modal-service">
+                                        <i class="uil uil-check-circle services__modal-icon"></i>
+                                        <p>Unlimited Konsultasi.</p>
+                                    </li>
+                                    <!-- <li class="services__modal-service">
+                                        <i class="uil uil-check-circle services__modal-icon"></i>
+                                        <p>.</p>
+                                    </li> -->
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== PORTFOLIO ====================-->
+            <section class="portfolio section" id="portfolio">
+                <h2 class="section__title">Project</h2>
+                <span class="section__subtitle">Most Recent Work</span>
+                <div class="portfolio__container container swiper-container">
+                    <div class="swiper-wrapper">
+                        <!-- porto1 -->
+                        <div class="portfolio__content grid swiper-slide">
+                            <img src="assets/img/portfolio1.jpg" alt="" class="portfolio__img">
+                            <div class="portfolio__data">
+                                <h3 class="portfolio__title">Chocolate Theme</h3>
+                                <p class="portfolio__description">Wedding Invitation Website of Himaya and Ilyas.</p>
+                                <a href="https://undanganmanten.my.id/chocolate" target="_blank" class="button button--flex button--small portfolio__button">Demo <i class="uil uil-arrow-right button__icon"></i></a>
+                            </div>
+                        </div>
+                        <!-- porto2 -->
+                        <div class="portfolio__content grid swiper-slide">
+                            <img src="assets/img/portfolio2.jpg" alt="" class="portfolio__img">
+                            <div class="portfolio__data">
+                                <h3 class="portfolio__title">Sky Theme</h3>
+                                <p class="portfolio__description">Wedding Invitation Website of Mita and Rizki.</p>
+                                <a href="https://undanganmanten.my.id/sky" target="_blank" class="button button--flex button--small portfolio__button">Demo <i class="uil uil-arrow-right button__icon"></i></a>
+                            </div>
+                        </div>
+                        <!-- porto3 -->
+                        <div class="portfolio__content grid swiper-slide">
+                            <img src="assets/img/portfolio3.jpg" alt="" class="portfolio__img">
+                            <div class="portfolio__data">
+                                <h3 class="portfolio__title">Marmer Theme</h3>
+                                <p class="portfolio__description">Wedding Invitation Website of Qonita and Ghifari.</p>
+                                <a href="https://undanganmanten.my.id/qonita-ghifari" target="_blank" class="button button--flex button--small portfolio__button">Demo <i class="uil uil-arrow-right button__icon"></i></a>
+                            </div>
+                        </div>
+                          <!-- porto4 -->
+                        <div class="portfolio__content grid swiper-slide">
+                            <img src="assets/img/portfolio4.jpg" alt="" class="portfolio__img">
+                            <div class="portfolio__data">
+                                <h3 class="portfolio__title">Black Clean Theme</h3>
+                                <p class="portfolio__description">Wedding Invitation Website. Example only.</p>
+                                <a href="https://undanganmanten.my.id/contoh-simple" target="_blank" class="button button--flex button--small portfolio__button">Demo <i class="uil uil-arrow-right button__icon"></i></a>
+                            </div>
+                        </div>
+                        <!-- porto5 -->
+                        <div class="portfolio__content grid swiper-slide">
+                            <img src="assets/img/portfolio5.jpg" alt="" class="portfolio__img">
+                            <div class="portfolio__data">
+                                <h3 class="portfolio__title">Fu Red Theme</h3>
+                                <p class="portfolio__description">Wedding Invitation Website of Fita and Khoir.</p>
+                                <a href="https://undanganmanten.my.id/fita-khoir" target="_blank" class="button button--flex button--small portfolio__button">Demo <i class="uil uil-arrow-right button__icon"></i></a>
+                            </div>
+                        </div>
+                         <!-- porto6 -->
+                         <div class="portfolio__content grid swiper-slide">
+                            <img src="assets/img/portfolio6.jpg" alt="" class="portfolio__img">
+                            <div class="portfolio__data">
+                                <h3 class="portfolio__title">Purslanes Theme</h3>
+                                <p class="portfolio__description">Wedding Invitation Website of Zulfa and Fian.</p>
+                                <a href="https://undanganmanten.my.id/zulfa-fian" target="_blank" class="button button--flex button--small portfolio__button">Demo <i class="uil uil-arrow-right button__icon"></i></a>
+                            </div>
+                        </div> 
+                         <!-- porto7 -->
+                         <div class="portfolio__content grid swiper-slide">
+                            <img src="assets/img/portfolio7.jpg" alt="" class="portfolio__img">
+                            <div class="portfolio__data">
+                                <h3 class="portfolio__title">Pink Rose Theme</h3>
+                                <p class="portfolio__description">Wedding Invitation Website of Esa and Fauzan.</p>
+                                <a href="https://undanganmanten.my.id/esa-fauzan" target="_blank" class="button button--flex button--small portfolio__button">Demo <i class="uil uil-arrow-right button__icon"></i></a>
+                            </div>
+                        </div> 
+                         <!-- porto8 -->
+                         <div class="portfolio__content grid swiper-slide">
+                            <img src="assets/img/portfolio8.jpg" alt="" class="portfolio__img">
+                            <div class="portfolio__data">
+                                <h3 class="portfolio__title">Cookies Theme</h3>
+                                <p class="portfolio__description">Wedding Invitation Website of Zulfa and Fian.</p>
+                                <a href="https://undanganmanten.my.id/fian-zulfa" target="_blank" class="button button--flex button--small portfolio__button">Demo <i class="uil uil-arrow-right button__icon"></i></a>
+                            </div>
+                        </div> 
+                         <!-- porto9 -->
+                         <div class="portfolio__content grid swiper-slide">
+                            <img src="assets/img/portfolio9.jpg" alt="" class="portfolio__img">
+                            <div class="portfolio__data">
+                                <h3 class="portfolio__title">Dark Sky Theme</h3>
+                                <p class="portfolio__description">Wedding Invitation Website of Erlina and Eka.</p>
+                                <a href="https://undanganmanten.my.id/erlina-eka" target="_blank" class="button button--flex button--small portfolio__button">Demo <i class="uil uil-arrow-right button__icon"></i></a>
+                            </div>
+                        </div>   
+                    </div>
+                    <!-- arrows -->
+                    <div class="swiper-button-next">
+                        <i class="uil uil-angle-right-b swiper-portfolio-icon"></i>
+                    </div>
+                    <div class="swiper-button-prev">
+                        <i class="uil uil-angle-left-b swiper-portfolio-icon"></i>
+                    </div>
+                    <!-- pagination -->
+                    <div class="swiper-pagination"></div>
+                </div>
+            </section>
+
+            <!--==================== PROJECT IN MIND ====================-->
+            <section class="project section" id="contact">
+                <div class="project__bg">
+                    <div class="project__container container grid">
+                        <div class="project__data">
+                            <h2 class="project__title">You are going to get married?</h2>
+                            <p class="project__description">Contact us now to realize your awesome invitation.</p>
+                            <a href="https://api.whatsapp.com/send?phone=6285785941534&text=Haloo...%20Saya%20mau%20nanya%20tentang%20UndanganManten%20nih" target="_blank" class="button button--flex button--white"> Contact Us <i class="uil uil-message project__icon button__icon"></i></a>
+                        </div>
+                        <img src="assets/img/project1.svg" alt="" class="project__img">
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== TESTIMONIAL ====================-->
+            <section class="testimonial section">
+                <h2 class="section__title">Testimonial</h2>
+                <span class="section__subtitle">My Client Saying</span>
+                <div class="testimonial__container container swiper-container">
+                    <div class="swiper-wrapper">
+                        <!-- testi1 -->
+                        <div class="testimonial__content swiper-slide">
+                            <div class="testimonial__data">
+                                <div class="testimonial__header">
+                                    <img src="assets/img/qonita.png" alt="" class="testimonial__img">
+                                    <div>
+                                        <h3 class="testimonial__name">Qonita-Ghifari</h3>
+                                        <span class="testimonial__client">Client</span>
+                                    </div>
+                                </div>
+                                <div>
+                                    <i class="uil uil-star testimonial__icon-star"></i>
+                                    <i class="uil uil-star testimonial__icon-star"></i>
+                                    <i class="uil uil-star testimonial__icon-star"></i>
+                                    <i class="uil uil-star testimonial__icon-star"></i>
+                                    <i class="uil uil-star testimonial__icon-star"></i>
+                                </div>
+                            </div>
+                            <p class="testimonial__description">Sangat memuaskan, sesuai dengan apa yang kami inginkan bersama.</p>
+                        </div>
+                        <div class="testimonial__content swiper-slide">
+                            <div class="testimonial__data">
+                                <div class="testimonial__header">
+                                    <img src="assets/img/fita.jpg" alt="" class="testimonial__img">
+                                    <div>
+                                        <h3 class="testimonial__name">Fita-Khoir</h3>
+                                        <span class="testimonial__client">Client</span>
+                                    </div>
+                                </div>
+                                <div>
+                                    <i class="uil uil-star testimonial__icon-star"></i>
+                                    <i class="uil uil-star testimonial__icon-star"></i>
+                                    <i class="uil uil-star testimonial__icon-star"></i>
+                                    <i class="uil uil-star testimonial__icon-star"></i>
+                                    <i class="uil uil-star testimonial__icon-star"></i>
+                                </div>
+                            </div>
+                            <p class="testimonial__description">Terima kasih, undangannya cantik banget. Suka sekali pokoknya.</p>
+                        </div>
+                        <div class="testimonial__content swiper-slide">
+                            <div class="testimonial__data">
+                                <div class="testimonial__header">
+                                    <img src="assets/img/esa.jpg" alt="" class="testimonial__img">
+                                    <div>
+                                        <h3 class="testimonial__name">Esa-Fauzan</h3>
+                                        <span class="testimonial__client">Client</span>
+                                    </div>
+                                </div>
+                                <div>
+                                    <i class="uil uil-star testimonial__icon-star"></i>
+                                    <i class="uil uil-star testimonial__icon-star"></i>
+                                    <i class="uil uil-star testimonial__icon-star"></i>
+                                    <i class="uil uil-star testimonial__icon-star"></i>
+                                    <i class="uil uil-star testimonial__icon-star"></i>
+                                </div>
+                            </div>
+                            <p class="testimonial__description">Bener-bener sesuai request, suka banget sama warna pink dan ornamen bunga2nya</p>
+                        </div>
+                    </div>
+                    <!-- pagination -->
+                    <div class="swiper-pagination swiper-pagination-testimonial"></div>
+                </div>
+            </section>
+
+            <!--==================== CONTACT ME ====================-->
+            <!-- <section class="contact section" id="contact">
+                <h2 class="section__title">Contact Me </h2>
+                <span class="section__subtitle">Get in Touch</span>
+                <div class="contact__container container grid">
+                    <div>
+                        <div class="contact__information">
+                            <i class="uil uil-phone contact__icon"></i>
+                            <div>
+                                <h3 class="contact__title">Call Me</h3>
+                                <span class="contact__subtitle">088805144004</span>
+                            </div>
+                        </div>
+                        <div class="contact__information">
+                            <i class="uil uil-envelope contact__icon"></i>
+                            <div>
+                                <h3 class="contact__title">Email</h3>
+                                <span class="contact__subtitle">auf@tuta.io</span>
+                            </div>
+                        </div>
+                        <div class="contact__information">
+                            <i class="uil uil-map-marker contact__icon"></i>
+                            <div>
+                                <h3 class="contact__title">Location</h3>
+                                <span class="contact__subtitle">Surabaya</span>
+                            </div>
+                        </div>
+                    </div>
+                    <form action="" class="contact__form grid">
+                        <div class="contact__inputs grid">
+                            <div class="contact__content">
+                                <label for="" class="contact__label">Name</label>
+                                <input type="text" class="contact__input" placeholder="Joe Asena">
+                            </div>
+                            <div class="contact__content">
+                                <label for="" class="contact__label">Email</label>
+                                <input type="email" class="contact__input" placeholder="joe@mail.com">
+                            </div>
+                        </div>
+                        <div class="contact__content">
+                            <label for="" class="contact__label">Project</label>
+                            <input type="text" class="contact__input" placeholder="Computer vision">
+                        </div>
+                        <div class="contact__content">
+                            <label for="" class="contact__label">Message</label>
+                            <textarea name="" id="" cols="0" rows="7" class="contact__input" placeholder="Hello, I need your help to ...... "></textarea>
+                        </div>
+                        <div>
+                            <a href="#" class="button button--flex">Send Message <i class="uil uil-message button__icon"></i></a>
+                        </div>
+                    </form>
+                </div>
+            </section> -->
+        </main>
+
+        <!--==================== FOOTER ====================-->
+        <footer class="footer">
+            <div class="footer__bg">
+                <div class="footer__container container grid">
+                    <div>
+                        <h1 class="footer__title">UndanganManten</h1>
+                        <span class="footer__subtitle">Jasa Undangan Digital Website</span>
+                    </div>
+                    <ul class="footer__links">
+                        <li><a href="#services" class="footer__link">Services</a></li>
+                        <li><a href="#portfolio" class="footer__link">Portfolio</a></li>
+                        <li><a href="#contact" class="footer__link">Contact</a></li>
+                    </ul>
+                    <div class="footer__socials">
+                        <a href="https://instagram.com/undanganmanten.my.id" target="_blank" class="footer__social"><i class="uil uil-facebook-f"></i></a>
+                        <a href="https://instagram.com/undanganmanten.my.id" target="_blank" class="footer__social"><i class="uil uil-instagram"></i></a>
+                        <a href="https://instagram.com/undanganmanten.my.id" target="_blank" class="footer__social"><i class="uil uil-twitter-alt"></i></a>
+                    </div>
+                </div>
+                <p class="footer__copy" style="color: white;">&#169 UndanganManten. All right reserved.</p>
+            </div>
+        </footer>
+        
+        <!--==================== SCROLL TOP ====================-->
+        <a href="#" class="scrollup" id="scroll-up"><i class="uil uil-angle-up scrollup__icon"></i></a>
+
+        <!--==================== SWIPER JS ====================-->
+        <script src="assets/js/swiper-bundle.min.js"></script>
+
+        <!--==================== MAIN JS ====================-->
+        <script src="assets/js/main.js"></script>
+    </body>
 </html>
